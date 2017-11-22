@@ -20,7 +20,7 @@ CREATE TABLE `content` (
 
 -------- get feed data frist time ----
 
-	/var/www/laravelLearing$ php artisan XmlFeedParser:parsefeed
+	/var/www/lumenRestApi php artisan XmlFeedParser:parsefeed
 
 --------- cron -----------------
 
