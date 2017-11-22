@@ -14,8 +14,20 @@ CREATE TABLE `content` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=354 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+-------- get feed data frist time ----
+	/var/www/laravelLearing$ php artisan XmlFeedParser:parsefeed
 
 --------- cron -----------------
 
-* * * * * php /var/www/lumenRestApi/artisan schedule:run >> /dev/null 2>&1
+	* * * * * php /var/www/lumenRestApi/artisan schedule:run >> /dev/null 2>&1
+
+----------  run local server ---------
+	/var/www/lumenRestApi php -S localhost:8000 -t public
+
+	----------- end points -----------------
+	api_token = 12345 ( send as header )
+
+	http://localhost:8000/api/v1/content/ 		( entire listing GET Request )
+	http://localhost:8000/api/v1/content/{id} 	( detail page GET Request )
+
 
