@@ -20,7 +20,7 @@ CREATE TABLE `content` (
 
 -------- get feed data frist time ----
 
-	/var/www/lumenRestApi php artisan XmlFeedParser:parsefeed
+	/var/www/lumenRestApi $ php artisan XmlFeedParser:parsefeed
 
 --------- cron -----------------
 
@@ -28,7 +28,7 @@ CREATE TABLE `content` (
 
 ----------  run local server ---------
 
-	/var/www/lumenRestApi php -S localhost:8000 -t public
+	/var/www/lumenRestApi $ php -S localhost:8000 -t public
 
 	----------- end points -----------------
 	api_token = 12345 ( send as header )
