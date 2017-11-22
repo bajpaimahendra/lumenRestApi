@@ -1,5 +1,8 @@
 DB Name : lumen
+
 ----  schema -----
+
+
 CREATE TABLE `content` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
