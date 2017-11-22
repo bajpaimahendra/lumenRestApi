@@ -1,3 +1,4 @@
+DB Name : lumen
 ----  schema -----
 CREATE TABLE `content` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -15,6 +16,7 @@ CREATE TABLE `content` (
 ) ENGINE=InnoDB AUTO_INCREMENT=354 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -------- get feed data frist time ----
+
 	/var/www/laravelLearing$ php artisan XmlFeedParser:parsefeed
 
 --------- cron -----------------
@@ -22,6 +24,7 @@ CREATE TABLE `content` (
 	* * * * * php /var/www/lumenRestApi/artisan schedule:run >> /dev/null 2>&1
 
 ----------  run local server ---------
+
 	/var/www/lumenRestApi php -S localhost:8000 -t public
 
 	----------- end points -----------------
