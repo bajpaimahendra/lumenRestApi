@@ -36,6 +36,6 @@ CREATE TABLE `content` (
 
 4--------- cron -----------------
 
-* * * * * php /var/www/lumenRestApi/artisan schedule:run >> /dev/null 2>&1
+  * * * * * php /var/www/lumenRestApi/artisan schedule:run >> /dev/null 2>&1
 
 
