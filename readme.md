@@ -28,6 +28,7 @@ CREATE TABLE `content` (
 
 
 3----------- end points -----------------
+
 	api_token = 12345 ( send as header )
 
 	http://localhost:8000/api/v1/content/ 		( entire listing GET Request )
@@ -35,6 +36,6 @@ CREATE TABLE `content` (
 
 4--------- cron -----------------
 
-  * * * * * php /var/www/lumenRestApi/artisan schedule:run >> /dev/null 2>&1
+* * * * * php /var/www/lumenRestApi/artisan schedule:run >> /dev/null 2>&1
 
 
